@@ -1,7 +1,6 @@
 class CategoriesController < ApplicationController
   before_action :require_admin, except: [:index, :show]
 
-
   def new
     @category = Category.new
   end
